@@ -145,6 +145,29 @@ nav {
   width: 100%;
 }
 
+.profile-photo-wrapper {
+  margin-bottom: 36px;
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--amber);
+  box-shadow: 0 8px 32px rgba(245, 158, 11, 0.15);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
 .avail-badge {
   display: inline-flex;
   align-items: center;
